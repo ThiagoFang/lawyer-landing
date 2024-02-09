@@ -1,0 +1,77 @@
+:root {
+  /*========== Colors ==========*/
+  --blue-primary: #051622;
+  --blue-secondary: #0b283d;
+  --golden-primary: #e2b96f;
+  --golden-secondary: #f9e9b7;
+  --main-gradient: linear-gradient(
+    45deg,
+    rgba(226, 185, 111, 1) 0%,
+    rgba(249, 233, 183, 1) 100%
+  );
+
+  /*========== Font and typography ==========*/
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Responsive typography */
+  @media screen and (min-width: 1024px) {
+    :root {
+      --biggest-font-size: 3.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+    }
+  }
+}
+
+/*=============== BASE ===============*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--blue-primary);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1.5rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  background: var(--main-gradient);
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--first-color);
+  color: white;
+}
