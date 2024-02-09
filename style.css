@@ -11,6 +11,9 @@
   );
 
   /*========== Font and typography ==========*/
+  --sans: "Open Sans", sans-serif;
+  --serif: "Playfair Display", serif;
+
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -44,12 +47,14 @@ html {
 
 body {
   background: var(--blue-primary);
+  color: white;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
   margin-inline: 1.5rem;
+  margin: 0 auto 0 auto;
 }
 
 .section {
