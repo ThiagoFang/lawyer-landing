@@ -14,6 +14,7 @@
   --sans: "Open Sans", sans-serif;
   --serif: "Playfair Display", serif;
 
+  --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -25,6 +26,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
+  --font-extrabold: 800;
 
   /* Responsive typography */
   @media screen and (min-width: 1024px) {
@@ -48,17 +50,19 @@ html {
 body {
   background: var(--blue-primary);
   color: white;
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
-  margin-inline: 1.5rem;
+  max-width: 1280px;
   margin: 0 auto 0 auto;
 }
 
 .section {
-  padding-block: 5rem 1.5rem;
+  padding: 4rem 1.5rem;
 }
 
 .main {
@@ -80,3 +84,91 @@ body {
   background-color: var(--first-color);
   color: white;
 }
+
+/*=============== HOME/MAIN BANNER ===============*/
+
+/*=============== COURSE STATS ===============*/
+.section.stats {
+  background: var(--main-gradient);
+}
+
+.section.stats .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statbox__time {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--h1-font-size);
+}
+
+.statbox__time .box-main {
+  font-size: calc(var(--biggest-font-size) * 1.75);
+  font-weight: var(--font-extrabold);
+}
+.statbox__time .box-main span {
+  color: var(--blue-primary);
+}
+
+.statbox__time .box-content {
+  line-height: 1.1;
+  color: var(--blue-primary);
+}
+.statbox__time .box-content span {
+  font-weight: var(--font-bold);
+}
+
+.statbox__quantity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.statbox__quantity .box-main {
+  font-size: calc(var(--biggest-font-size) * 1.75);
+  font-weight: var(--font-extrabold);
+}
+.statbox__quantity .box-secondary {
+  display: flex;
+  align-items: center;
+  font-size: var(--h1-font-size);
+  color: var(--blue-primary);
+}
+.statbox__quantity .box-secondary .course-quantity {
+  font-size: calc(var(--biggest-font-size) * 1.75);
+  font-weight: var(--font-bold);
+}
+.statbox__quantity .box-secondary .completed-text {
+  font-weight: var(--font-bold);
+}
+
+.statbox__students {
+  display: flex;
+  align-items: center;
+  font-size: var(--h1-font-size);
+  gap: 1rem;
+  color: var(--blue-primary);
+}
+
+.statbox__students .box-main {
+  font-size: calc(var(--biggest-font-size) * 1.75);
+  font-weight: var(--font-extrabold);
+}
+
+.statbox__students .box-main span {
+  color: white;
+}
+
+/*=============== COURSE LEVELS  ===============*/
+
+/*=============== COURSE THEMES ===============*/
+
+/*=============== TIME COUNTER ===============*/
+
+/*=============== BENEFITS TABLE ===============*/
+
+/*=============== NEWSLETTER ===============*/
+
+/*=============== MEDIA QUERYS ===============*/
