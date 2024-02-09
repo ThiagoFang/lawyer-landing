@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -28,15 +32,15 @@
 
     <!--==================== COURSE STATS ====================-->
     <section class="section stats">
-      <div class="container">
-        <div class="statbox__time">
+      <ul class="container">
+        <li class="statbox__time">
           <div class="box-main">+<span>80h</span></div>
           <div class="box-content">
             DE CONTEÚDOS<br />
             <span>EM VÍDEOS</span>
           </div>
-        </div>
-        <div class="statbox__quantity">
+        </li>
+        <li class="statbox__quantity">
           <div class="box-main">SÃO</div>
           <div class="box-secondary">
             <div class="course-quantity">3</div>
@@ -45,16 +49,37 @@
               <span class="completed-text">COMPLETOS</span>
             </div>
           </div>
-        </div>
-        <div class="statbox__students">
+        </li>
+        <li class="statbox__students">
           <div class="box-main"><span>+</span>200</div>
           <div class="box-secondary">ALUNOS</div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
     <!--==================== COURSE LEVELS ====================-->
-    <section class="section">...</section>
+    <section class="section levels">
+      <div class="container">
+        <h1 class="levels__title">
+          Você poderá escolher entre os <span>3 níveis do curso</span>
+        </h1>
+
+        <ul class="levels__options-grid">
+          <li class="levels__options-box">
+            <div class="options-box__header">100% ONLINE</div>
+            <div class="options-box__image online" />
+          </li>
+          <li class="levels__options-box">
+            <div class="options-box__header">IMERSÃO AO VIVO</div>
+            <div class="options-box__image immersion" />
+          </li>
+          <li class="levels__options-box">
+            <div class="options-box__header">MENTORIA AO VIVO</div>
+            <div class="options-box__image coach" />
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!--==================== COURSE THEMES ====================-->
     <section class="section">...</section>

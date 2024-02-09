@@ -12,7 +12,7 @@
 
   /*========== Font and typography ==========*/
   --sans: "Open Sans", sans-serif;
-  --serif: "Playfair Display", serif;
+  --serif: "Lora", serif;
 
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -162,6 +162,58 @@ body {
 }
 
 /*=============== COURSE LEVELS  ===============*/
+.section.levels .levels__title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: var(--h1-font-size);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.section.levels .levels__title span {
+  font-size: calc(var(--biggest-font-size) * 2);
+  margin-top: 0.25;
+  font-family: var(--serif);
+  font-weight: var(--font-semi-bold);
+  color: var(--golden-secondary);
+  letter-spacing: 2px;
+}
+
+.levels__options-grid {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: space-around;
+}
+
+.levels__options-box {
+  background: var(--main-gradient);
+  width: 280px;
+  user-select: none;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.levels__options-box .options-box__header {
+  padding: 1rem;
+  font-weight: var(--font-bold);
+  color: var(--blue-primary);
+  text-align: center;
+  font-size: var(--h1-font-size);
+}
+.levels__options-box .options-box__image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.levels__options-box .options-box__image.online {
+  background-image: url("./assets/img/IMG_0125.jpg");
+}
+.levels__options-box .options-box__image.immersion {
+  background-image: url("./assets/img/IMG_0490.jpg");
+}
+.levels__options-box .options-box__image.coach {
+  background-image: url("./assets/img/IMG_0275.jpg");
+}
 
 /*=============== COURSE THEMES ===============*/
 
