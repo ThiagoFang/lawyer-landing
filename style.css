@@ -216,6 +216,41 @@ body {
 }
 
 /*=============== COURSE THEMES ===============*/
+.section.themes {
+  background-image: url("./assets/img/square_pattern.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.section.themes .container {
+  display: flex;
+  gap: 8rem;
+}
+
+.section.themes .tablets {
+  height: 60vh;
+}
+
+.section.themes .themes__box {
+  background-color: var(--blue-primary);
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+}
+
+.themes__box-internal {
+  border: 6px solid var(--golden-primary);
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.themes__box-title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1.25;
+  font-family: var(--serif);
+  letter-spacing: 2px;
+}
 
 /*=============== TIME COUNTER ===============*/
 
