@@ -233,6 +233,7 @@ body {
 
 .section.themes .themes__box {
   background-color: var(--blue-primary);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   flex: 1;
   padding: 2.5rem;
   display: flex;
@@ -252,9 +253,136 @@ body {
   letter-spacing: 2px;
 }
 
-/*=============== TIME COUNTER ===============*/
+.themes__box-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 380px;
+}
+
+.themes__box-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.themes__box-image-wrapper img {
+  width: 2.5rem;
+}
+
+.themes__box-list-item span {
+  font-size: var(--h1-font-size);
+}
+
+/*=============== TIMER ===============*/
+.section.timer {
+  background: var(--main-gradient);
+}
+
+.section.timer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.timer_legend {
+  font-size: var(--h1-font-size);
+  color: var(--blue-primary);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.timer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  gap: 2rem;
+}
+
+.timer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  background-color: var(--blue-primary);
+}
+.timer__box-number {
+  font-size: calc(var(--biggest-font-size) * 1.5);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
 
 /*=============== BENEFITS TABLE ===============*/
+.section.table .container {
+  display: flex;
+}
+
+.benefits__table {
+  background: var(--main-gradient);
+  width: 100%;
+  border: 2px solid var(--golden-primary);
+}
+
+.benefits__table th {
+  color: var(--blue-primary);
+  font-size: var(--h1-font-size);
+  padding: 1rem;
+}
+
+.benefits__table td {
+  font-size: var(--h3-font-size);
+  padding: 1rem;
+}
+
+.benefits__table tr:nth-child(even) {
+  background-color: var(--blue-primary);
+}
+.benefits__table tr:nth-child(odd) {
+  background-color: var(--blue-secondary);
+}
+.benefits__table tr:nth-child(1) {
+  font-weight: var(--font-bold);
+  background-color: transparent;
+}
+.benefits__table tr:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: var(--font-bold);
+}
+.benefits__table tr:nth-child(2) td {
+  color: var(--blue-primary);
+  text-align: center;
+  font-size: var(--h2-font-size);
+}
+.benefits__table tr:nth-child(2) td span {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.content__text-table-cell {
+  transform: translateY(0.75rem);
+}
+
+.content_cell {
+  font-size: var(--h2-font-size);
+  max-width: 320px;
+  line-height: 1.35;
+}
+.content_cell b {
+  font-weight: var(--font-semi-bold);
+}
+
+.x_cell span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.special__row {
+  background-color: transparent !important;
+  color: var(--blue-primary);
+}
 
 /*=============== NEWSLETTER ===============*/
 
