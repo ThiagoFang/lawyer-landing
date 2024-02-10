@@ -69,20 +69,28 @@ body {
   overflow: hidden;
 }
 
+.input {
+  appearance: none;
+  background-color: transparent;
+  padding: 1.25rem;
+  border: 3px solid var(--golden-secondary);
+  color: white;
+  outline: none;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h3-font-size);
+}
+
 /*=============== BUTTON ===============*/
 .button {
   display: inline-block;
   background: var(--main-gradient);
-  padding: 1rem 1.5rem;
-  border-radius: 4rem;
-  color: var(--first-color);
+  padding: 1rem 1.65rem;
+  color: var(--blue-primary);
   font-weight: var(--font-semi-bold);
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: var(--first-color);
-  color: white;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 /*=============== HOME/MAIN BANNER ===============*/
@@ -385,5 +393,80 @@ body {
 }
 
 /*=============== NEWSLETTER ===============*/
+.section.newsletter {
+  background-image: url("/assets//img/judge-background.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 80dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.section.newsletter::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(11, 40, 61);
+  background: linear-gradient(
+    128deg,
+    rgba(11, 40, 61, 0.8) 0%,
+    rgba(11, 40, 61, 0.05) 100%
+  );
+  inset: 0;
+  z-index: 0;
+}
+
+.section.section.newsletter .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section.section.newsletter form {
+  display: grid;
+}
+
+.newsletter__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: calc(var(--biggest-font-size) * 1.65);
+  letter-spacing: 2px;
+  font-family: var(--serif);
+  font-weight: var(--font-bold);
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.newsletter__title span {
+  font-size: calc(var(--biggest-font-size));
+  font-family: var(--sans);
+  font-weight: var(--font-semi-bold);
+  color: var(--golden-secondary);
+}
+
+.newsletter__group-info {
+  margin-bottom: 4rem;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  font-weight: var(--font-semi-bold);
+}
+
+.newsletter__group-form {
+  display: grid;
+  gap: 2rem;
+}
+
+.newsletter__group-form button {
+  width: max-content;
+  margin: 0 auto 0 auto;
+  font-size: var(--h3-font-size);
+}
 
 /*=============== MEDIA QUERYS ===============*/
