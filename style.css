@@ -53,6 +53,7 @@ body {
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -117,6 +118,7 @@ body {
   position: absolute;
   right: 0;
   bottom: -1rem;
+  height: 80vh;
 }
 
 .section.home .container {
@@ -625,3 +627,222 @@ body {
 }
 
 /*=============== MEDIA QUERYS ===============*/
+@media screen and (max-width: 1024px) {
+  .section.home {
+    background-image: none;
+  }
+  .section.home .container {
+    justify-content: center;
+  }
+  .mig__banner-img {
+    display: none;
+  }
+
+  .statbox__time {
+    font-size: var(--h3-font-size);
+  }
+  .statbox__time .box-main {
+    font-size: calc(var(--biggest-font-size));
+  }
+  .statbox__quantity .box-main {
+    font-size: calc(var(--biggest-font-size));
+  }
+  .statbox__quantity .box-secondary {
+    font-size: var(--h3-font-size);
+  }
+  .statbox__quantity .box-secondary .course-quantity {
+    font-size: calc(var(--biggest-font-size));
+  }
+
+  .statbox__students {
+    font-size: var(--h3-font-size);
+  }
+
+  .statbox__students .box-main {
+    font-size: calc(var(--biggest-font-size));
+  }
+
+  .section.section .levels__title {
+    font-size: var(--h2-font-size);
+  }
+  .section.levels .levels__title span {
+    font-size: calc(var(--biggest-font-size) * 1.5);
+  }
+
+  .levels__options-grid {
+    margin-top: 4rem;
+  }
+
+  .levels__options-box {
+    width: 240px;
+  }
+  .levels__options-box .options-box__header {
+    padding: 0.75rem;
+    font-size: var(--h2-font-size);
+  }
+  .levels__options-box .options-box__image {
+    height: 250px;
+  }
+
+  .tablets {
+    display: none;
+  }
+
+  .section.themes .themes__box {
+    padding: 2rem;
+    max-width: 520px;
+    margin: 0 auto 0 auto;
+  }
+
+  .themes__box-internal {
+    padding: 2rem;
+  }
+
+  .themes__box-title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+  }
+
+  .themes__box-list-item span {
+    font-size: var(--h2-font-size);
+  }
+
+  .section.timer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .timer__grid {
+    grid-template-columns: repeat(4, 140px);
+    gap: 1.5rem;
+  }
+
+  .timer__box {
+    height: 140px;
+  }
+  .timer__box-number {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+  }
+
+  .section.section.newsletter .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .newsletter__title {
+    font-size: var(--biggest-font-size);
+  }
+
+  .newsletter__title span {
+    font-size: var(--h1-font-size);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section.home .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .main__title h1 {
+    font-size: calc(var(--biggest-font-size) * 1.5);
+  }
+  .banner__extra-text {
+    position: static;
+    font-size: var(--h3-font-size);
+    text-align: center;
+  }
+
+  .section.stats .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section.section .levels__title {
+    font-size: var(--normal-font-size);
+    letter-spacing: 2px;
+  }
+  .section.levels .levels__title span {
+    font-size: calc(var(--h1-font-size));
+  }
+
+  .levels__options-grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .levels__column {
+    display: none;
+  }
+
+  .section.themes .themes__box {
+    padding: 1.5rem;
+  }
+
+  .themes__box-internal {
+    padding: 1.5rem;
+  }
+
+  .themes__box-title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+  }
+
+  .themes__box-list-item span {
+    font-size: var(--h3-font-size);
+  }
+
+  .timer_legend {
+    font-size: var(--h3-font-size);
+  }
+
+  .timer__grid {
+    grid-template-columns: repeat(4, 80px);
+    gap: 1rem;
+  }
+
+  .timer__box {
+    height: 80px;
+  }
+  .timer__box-number {
+    font-size: var(--h2-font-size);
+  }
+  .timer__box-date {
+    font-size: 10px;
+  }
+
+  .benefits__table th {
+    font-size: var(--h3-font-size);
+  }
+
+  .benefits__table td {
+    font-size: var(--h3-font-size);
+    padding: 0.5rem;
+  }
+  .benefits__table tr:nth-child(2) td {
+    font-size: 12px;
+  }
+  .benefits__table tr:nth-child(2) td span {
+    font-size: 12px;
+  }
+
+  .content__text-table-cell {
+    transform: translateY(0.45rem);
+  }
+
+  .content_cell:not(.special) {
+    font-size: var(--small-font-size);
+  }
+
+  .content_cell.long div {
+    transform: translateY(-0.5rem);
+  }
+
+  .x_cell span {
+    padding: 0.5rem;
+    font-size: calc(var(--h1-font-size));
+  }
+}
