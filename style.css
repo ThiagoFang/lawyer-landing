@@ -106,7 +106,7 @@ body {
 .section.home {
   display: flex;
   min-height: 70dvh;
-  background-image: url("/assets//img/home-background.jpg");
+  background-image: url("https://i.imgur.com/7e6Scai.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -549,7 +549,7 @@ body {
 
 /*=============== NEWSLETTER ===============*/
 .section.newsletter {
-  background-image: url("/assets//img/judge-background.jpg");
+  background-image: url("https://i.imgur.com/B3sx8qF.jpg");
   background-position: center;
   background-size: cover;
   min-height: 80dvh;
