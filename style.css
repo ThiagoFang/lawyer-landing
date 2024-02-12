@@ -315,7 +315,7 @@ body {
   width: max-content;
   margin: 2rem auto 0 auto;
 }
-.lucide-chevrons-icon button {
+.lucide-chevrons-icon a {
   appearance: none;
   all: unset;
   cursor: pointer;

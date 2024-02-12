@@ -81,25 +81,25 @@
           <li class="levels__options-box">
             <div class="options-box__header">100% ONLINE</div>
             <div class="options-box__image online">
-              <button class="button">CONTEÚDO</button>
+              <button class="button levels_online_button">CONTEÚDO</button>
             </div>
           </li>
           <li class="levels__options-box">
             <div class="options-box__header">IMERSÃO AO VIVO</div>
             <div class="options-box__image immersion">
-              <button class="button">CONTEÚDO</button>
+              <button class="button levels_immersion_button">CONTEÚDO</button>
             </div>
           </li>
           <li class="levels__options-box">
             <div class="options-box__header">MENTORIA AO VIVO</div>
             <div class="options-box__image coach">
-              <button class="button">CONTEÚDO</button>
+              <button class="button levels_coach_button">CONTEÚDO</button>
             </div>
           </li>
         </ul>
 
         <div class="lucide-chevrons-icon">
-          <button>
+          <a href="#prices_table">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="64"
@@ -113,7 +113,7 @@
               <path d="m7 6 5 5 5-5" />
               <path d="m7 13 5 5 5-5" />
             </svg>
-          </button>
+          </a>
         </div>
 
         <img src="/assets/img/column-left.png" class="levels__column left" />
@@ -171,19 +171,19 @@
         </span>
         <div class="timer__grid">
           <div class="timer__box">
-            <span class="timer__box-number"> 07 </span>
+            <span class="timer__box-number days">00</span>
             <span class="timer__box-date"> DIAS </span>
           </div>
           <div class="timer__box">
-            <span class="timer__box-number"> 14 </span>
+            <span class="timer__box-number hours">00</span>
             <span class="timer__box-date"> HORAS </span>
           </div>
           <div class="timer__box">
-            <span class="timer__box-number"> 27 </span>
+            <span class="timer__box-number minutes">00</span>
             <span class="timer__box-date"> MINUTOS </span>
           </div>
           <div class="timer__box">
-            <span class="timer__box-number"> 42 </span>
+            <span class="timer__box-number seconds">00</span>
             <span class="timer__box-date"> SEGUNDOS </span>
           </div>
         </div>
@@ -192,7 +192,7 @@
 
     <!--==================== BENEFITS TABLE ====================-->
     <section class="section table">
-      <div class="container">
+      <div class="container" id="prices_table">
         <table class="benefits__table">
           <!-- TABLE HEADER -->
           <tr>
@@ -377,12 +377,19 @@
             profissional.
           </p>
           <form class="newsletter__group-form">
-            <input class="input" type="text" name="nome" placeholder="NOME" />
+            <input
+              class="input"
+              type="text"
+              name="nome"
+              placeholder="NOME"
+              id="nome"
+            />
             <input
               class="input"
               type="email"
               name="email"
               placeholder="EMAIL"
+              id="email"
             />
             <button type="submit" class="button">ENTRE AGORA</button>
           </form>
@@ -390,5 +397,7 @@
         <div />
       </div>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
